@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.logicgates.AND"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        style="@style/heading"
+        android:text="AND Logic Gate"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1. The AND gate is an electronic circuit that gives a true output (1) only if all its inputs are true." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="2. A dot (·) is used to show the AND operation i.e. A·B." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/heading"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SYMBOL"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/and"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/heading"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TRUTH TABLE"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Input 1"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Input 2"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Output"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1"
+            android:textAlignment="center" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Try It Yourself"
+        style="@style/heading"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Input 1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/andIp1"
+        android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Input 2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/andIp2"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Input 3" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/andIp3"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        style="@style/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:onClick="RESULT"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/andResult"/>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

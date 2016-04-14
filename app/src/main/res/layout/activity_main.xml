@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.logicgates.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="LOGIC GATES"
+        style="@style/heading"
+        android:textSize="35sp"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/button"
+        android:text="AND Gate"
+        android:onClick="AND"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Or Gate"
+        style="@style/button"
+        android:onClick="OR"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not Gate"
+        style="@style/button"
+        android:onClick="NOT"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAND Gate"
+        android:onClick="NAND"
+        style="@style/button"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nor Gate"
+        style="@style/button"
+        android:onClick="NOR"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
